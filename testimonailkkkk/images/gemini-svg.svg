@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 130" width="100%" height="100%">
+  <defs>
+    <!-- Background for preview/export -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5AB"/>
+      <stop offset="30%" stop-color="#D4AF37"/>
+      <stop offset="70%" stop-color="#AA7C11"/>
+      <stop offset="100%" stop-color="#5B4308"/>
+    </linearGradient>
+
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#CCCCCC"/>
+      <stop offset="100%" stop-color="#888888"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#D4AF37" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- LOGO ICON: LUXURY WATCH -->
+  <g id="WatchIcon" transform="translate(10, 0)" filter="url(#goldGlow)">
+    <!-- Watch Leather/Metal Strap Top & Bottom -->
+    <path d="M 50 12 L 80 12 L 76 32 L 54 32 Z" fill="url(#goldGrad)" opacity="0.5"/>
+    <path d="M 54 98 L 76 98 L 80 118 L 50 118 Z" fill="url(#goldGrad)" opacity="0.5"/>
+
+    <!-- Outer Bezel/Case -->
+    <circle cx="65" cy="65" r="42" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+    <circle cx="65" cy="65" r="37" fill="#111111" stroke="url(#goldGrad)" stroke-width="1.5"/>
+
+    <!-- Watch Crown (Winder) -->
+    <path d="M 107 59 L 112 61 L 112 69 L 107 71 Z" fill="url(#goldGrad)"/>
+
+    <!-- Dial Roman Markers -->
+    <!-- 12 o'clock -->
+    <rect x="63.5" y="32" width="3" height="7" fill="url(#goldGrad)"/>
+    <!-- 3 o'clock -->
+    <rect x="91" y="63.5" width="7" height="3" fill="url(#goldGrad)"/>
+    <!-- 6 o'clock -->
+    <rect x="63.5" y="91" width="3" height="7" fill="url(#goldGrad)"/>
+    <!-- 9 o'clock -->
+    <rect x="32" y="63.5" width="7" height="3" fill="url(#goldGrad)"/>
+
+    <!-- Luxury Hands (Positioned at 10:10 for elegance) -->
+    <!-- Hour Hand -->
+    <line x1="65" y1="65" x2="48" y2="48" stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- Minute Hand -->
+    <line x1="65" y1="65" x2="84" y2="44" stroke="url(#goldGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Second Hand (Red/Gold Accent) -->
+    <line x1="65" y1="65" x2="65" y2="34" stroke="#E6C687" stroke-width="1" stroke-linecap="round"/>
+    <!-- Center Dot -->
+    <circle cx="65" cy="65" r="3.5" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- TYPOGRAPHY: BRAND NAME -->
+  <g id="BrandText" transform="translate(145, 0)">
+    <!-- LUXURY -->
+    <text x="0" y="67" font-family="'Cinzel', 'Playfair Display', 'Times New Roman', serif" font-size="46" font-weight="700" fill="url(#goldGrad)" letter-spacing="6" filter="url(#goldGlow)">LUXURY</text>
+    
+    <!-- WATCHES -->
+    <text x="3" y="95" font-family="'Montserrat', 'Open Sans', 'Helvetica', sans-serif" font-size="19" font-weight="300" fill="url(#silverGrad)" letter-spacing="14">WATCHES</text>
+
+    <!-- Decorative Accent Line -->
+    <line x1="3" y1="106" x2="270" y2="106" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.6"/>
+  </g>
+</svg>
